@@ -27,45 +27,31 @@ colorCode('white') should return 9
 */
 
 const colorCode = (color) => {
-  // Code here
   color = color.toLowerCase();
-  let encodedValue = null;
   switch (color) {
     case "black":
-      encodedValue = 0;
-      break;
+      return 0;
     case "brown":
-      encodedValue = 1;
-      break;
+      return 1;
     case "red":
-      encodedValue = 2;
-      break;
+      return 2;
     case "orange":
-      encodedValue = 3;
-      break;
+      return 3;
     case "yellow":
-      encodedValue = 4;
-      break;
+      return 4;
     case "green":
-      encodedValue = 5;
-      break;
+      return 5;
     case "blue":
-      encodedValue = 6;
-      break;
+      return 6;
     case "violet":
-      encodedValue = 7;
-      break;
+      return 7;
     case "grey":
-      encodedValue = 8;
-      break;
+      return 8;
     case "white":
-      encodedValue = 9;
-      break;
+      return 9;
     default:
-      encodedValue = "Something went wrong";
-      exit;
+      return undefined;
   }
-  return encodedValue;
 };
 
-console.log(colorCode("Blue"));
+console.log(colorCode("WhItE"));
