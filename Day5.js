@@ -15,9 +15,9 @@ getTheGapX("F(X) !== G(X) !== F(X)") returns 18
 const str = 'JavaScript';
 
 function getTheGapX(str) {
-    // write your solution here
     let firstXInString = str.indexOf('X');
     let lastXInString = str.lastIndexOf('X');
+    
     if (firstXInString === -1) return -1;
     if (firstXInString === lastXInString) return 0;
     countOfCharacters = lastXInString - firstXInString;

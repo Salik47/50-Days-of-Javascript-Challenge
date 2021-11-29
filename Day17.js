@@ -20,7 +20,6 @@ longestConsecutiveSequence([0,3,7,2,5,8,4,6,0,1]) returns 9
  * @param {number[]} inputArray Array of numbers
  */
 const longestConsecutiveSequence = (inputArray) => {
-  // Your code here
   let setOfInputArray = new Set(inputArray);
   let cleanedArray = [...setOfInputArray].sort((a, b) => a - b);
   let lcs = 0;

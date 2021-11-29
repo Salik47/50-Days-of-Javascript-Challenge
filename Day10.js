@@ -18,8 +18,6 @@ const array = [
 const filterField = "money"
 
 function removeArrayElement(filterField) {
-    // write your solution here
-
     return array.filter(element => element.field !== filterField);
 }
 

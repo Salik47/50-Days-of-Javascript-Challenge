@@ -9,7 +9,6 @@ randomNumberGeneratorInRange(100, 200) should return a number between 100-200 (i
 */
 
 function randomNumberGeneratorInRange(rangeStart, rangeEnd) {
-	// write your solution here
     rangeStart = Math.ceil(rangeStart);
     rangeEnd = Math.floor(rangeEnd);
     let randomNumber = Math.floor(Math.random() * (rangeEnd - rangeStart + 1) + rangeStart);

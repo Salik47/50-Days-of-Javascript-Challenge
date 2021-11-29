@@ -8,7 +8,6 @@ function fibonacci(n) returns the N-th value of the Fibonacci sequence
 */
 
 function fibonacci(n) {
-	// write your solution here
     if (n === 0) {
         return 0;
     }

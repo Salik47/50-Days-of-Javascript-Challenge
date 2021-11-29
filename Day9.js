@@ -11,9 +11,7 @@ isEmpty({key: 1}) returns false
 const obj = { key: 1 };
 
 function isEmpty(obj) {
-  // write your solution here
   for (let i in obj) return false;
-
   return true;
 }
 

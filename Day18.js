@@ -20,13 +20,10 @@ Total number of grains that can exist on the chessboard given the condition
 */
 
 const totalGrains = () => {
-	// Code here
     return BigInt(2 ** 64 - 1);
-	
 }
 
 const grainsOn = (input) => {
-	// Code here
 	return BigInt(2 ** input - 1)
 }
 
