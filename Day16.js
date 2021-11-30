@@ -25,12 +25,12 @@ Any random string will be passed, it should work as asked
 function hey(message) {
   answer = "";
   if (message === message.toUpperCase() && message.endsWith("?"))
-    answer = "Calm down, I know what I'm doing!";
-  else if (message.endsWith("?")) answer = "Sure";
-  else if (message === message.toUpperCase() && message.length !== 0) answer = "Whoa, chill out!";
-  else if (message.length === 0) answer = "Fine. Be that way!";
-  else answer = "Whatever.";
-  return answer;
+    return "Calm down, I know what I'm doing!";
+  else if (message.endsWith("?")) return "Sure";
+  else if (message === message.toUpperCase() && message.length !== 0)
+    return "Whoa, chill out!";
+  else if (message.length === 0) return "Fine. Be that way!";
+  else return "Whatever.";
 }
 
 console.log(hey(""));
