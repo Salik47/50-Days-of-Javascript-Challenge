@@ -24,6 +24,7 @@ Any random string will be passed, it should work as asked
 
 function hey(message) {
   answer = "";
+
   if (message === message.toUpperCase() && message.endsWith("?"))
     return "Calm down, I know what I'm doing!";
   else if (message.endsWith("?")) return "Sure";

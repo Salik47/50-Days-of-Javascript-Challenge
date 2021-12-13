@@ -12,12 +12,13 @@ const str = "JavaScript is simple but not easy to master";
 const wordLimit = 3;
 
 function truncateWithWordLimit(str, wordLimit) {
-    let arr = [];
-    arr.push(...str.split(" "));
-    
-    while (arr.length !== wordLimit) arr.pop();
-    const truncatedString = arr.join(" ");
-    return truncatedString;
+  let arr = [];
+  arr.push(...str.split(" "));
+
+  while (arr.length !== wordLimit) arr.pop();
+  const truncatedString = arr.join(" ");
+
+  return truncatedString;
 }
 
 console.log(`Truncated string: ${truncateWithWordLimit(str, wordLimit)}`);

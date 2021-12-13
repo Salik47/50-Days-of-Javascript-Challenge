@@ -9,10 +9,12 @@ randomNumberGeneratorInRange(100, 200) should return a number between 100-200 (i
 */
 
 function randomNumberGeneratorInRange(rangeStart, rangeEnd) {
-    rangeStart = Math.ceil(rangeStart);
-    rangeEnd = Math.floor(rangeEnd);
-    let randomNumber = Math.floor(Math.random() * (rangeEnd - rangeStart + 1) + rangeStart);
-	return randomNumber;
+  rangeStart = Math.ceil(rangeStart);
+  rangeEnd = Math.floor(rangeEnd);
+  let randomNumber = Math.floor(
+    Math.random() * (rangeEnd - rangeStart + 1) + rangeStart
+  );
+  return randomNumber;
 }
 
-console.log(`My random number: ${randomNumberGeneratorInRange(5, 100)}`)
+console.log(`My random number: ${randomNumberGeneratorInRange(5, 100)}`);

@@ -9,6 +9,7 @@ The alphabet used consists of ASCII letters a to z, inclusive, and is case insen
 
 const isPangram = (input) => {
   let alphabet = "abcdefghijklmnopqrstuvwxyz";
+
   input = input.toLowerCase();
   for (let letter of alphabet) {
     if (!input.includes(letter)) return false;

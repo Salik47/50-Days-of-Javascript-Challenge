@@ -19,14 +19,16 @@ convertDigitsToAskedBase() with any random value passed should return correct ar
 */
 
 const convertDigitsToAskedBase = (digits, baseA, baseB) => {
-    let result = [];
-    let sum = 0;
-    for (let i = 0; i < digits.length; i++) {
-        sum += digits[i] * Math.pow(baseA, digits.length - i - 1);
-    }
-    while (sum > 0) {
-        result.unshift(sum % baseB);
-        sum = Math.floor(sum / baseB);
-    }
-    return result;
-}
+  let result = [];
+  let sum = 0;
+
+  for (let i = 0; i < digits.length; i++) {
+    sum += digits[i] * Math.pow(baseA, digits.length - i - 1);
+  }
+  while (sum > 0) {
+    result.unshift(sum % baseB);
+    sum = Math.floor(sum / baseB);
+  }
+
+  return result;
+};

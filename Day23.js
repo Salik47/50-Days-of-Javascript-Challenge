@@ -28,11 +28,10 @@ findEvenIndex([20,10,30,10,10,15,35]) should return 3
 */
 
 let findEvenIndex = (arr) => {
-  //Code goes here!
   let evenIndex = 0,
     l_sum = 0,
     r_sum = 0;
-  // console.log(arr);
+  
   if (arr.length < 0 || arr.length > 1000) return;
   for (let i = 0; i < arr.length - 1; i++) {
     if (i - 1 >= 0) {
@@ -42,7 +41,6 @@ let findEvenIndex = (arr) => {
       r_sum = arr.slice(i + 1, arr.length).reduce((prev, current) => {
         return prev + current;
       });
-      // console.log(i, l_sum, r_sum);
     }
 
     if (l_sum === r_sum && i - 1 >= 0) {
@@ -51,5 +49,6 @@ let findEvenIndex = (arr) => {
     }
   }
   if (evenIndex === 0) return -1;
+  
   return evenIndex;
 };
